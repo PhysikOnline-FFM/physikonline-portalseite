@@ -1,0 +1,68 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+footer {
+	border-top: 1px solid #ddd;
+	margin-top: 20px;
+	padding-top: 4px;
+}
+
+.page {
+	margin-top: 80px;
+}
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+.navbar-brand img{
+	margin: -13px 0;
+	max-height: 50px;
+	padding-right: 5px;
+}
+
+/* METRO STYLES
+-------------------------------------------------- */
+.marketing div.col-md-4 {
+	padding-top: 15px;
+}
+.metro{
+	border: 3px solid white;
+}
+.metro-0{
+	border-color: #888;
+}
+.metro-1{
+	background-color: rgba(221,219,232, 0.2); /*#DDDBE8;*/
+}
+.metro-2{
+	background-color: rgba(224,221,255, 0.4); /*#E1DCFF;*/
+}
+.metro-3{
+	background-color: rgba(194,193,204, 0.2); /*#C2C1CC;*/
+}
+
+/* Carousel
+-------------------------------------------------- */
+.blur {
+	filter: blur(2px);
+	-webkit-filter: blur(2px);
+}
+/*.carousel:hover .blur, .carousel:active  .blur{
+	filter: blur(1px);
+	-webkit-filter: blur(1px);
+}*/
+
+.carousel .carousel-caption > * {
+	color: white;
+	background-color: rgba(0,0,0, 0.5);
+	/* Not implemented yet */
+	backdrop-filter: blur(5px);
+	-o-backdrop-filter: blur(5px);
+	-moz-backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+}
+
+.carousel .carousel-caption.dark2light > * {
+	color: #555;
+	background-color: rgba(255,255,255, 0.75);
+}
+
