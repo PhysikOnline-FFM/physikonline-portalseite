@@ -9,7 +9,7 @@
     <meta name="author" content="Philip Arnold">
     <link rel="icon" href="/favicon.ico">
 
-    <title>UniPhi - PhysikOnline</title>
+    <title>SageCell-Server - PhysikOnline</title>
 
     <!-- styles -->
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
@@ -56,8 +56,9 @@
 					<li class="dropdown-header">Weitere Projekte</li>
 					<li><a href="/pages/pott.html">POTT</a></li>
 					<li><a href="/pages/poak.html">POAK</a></li>
-					<li><a href="/pages/podcastphysik.html">Podcast Wiki</a></li>
-					<li class="active"><a href="/pages/uniphi.html">Uniphi</a></li>
+					<li class="active"><a href="/pages/sagecell.html">SageCell</a></li>
+					<li><a href="/pages/podcastphysik.html">Podcast Physik</a></li>
+					<li><a href="/pages/uniphi.html">Uniphi</a></li>
                     <li class="dropdown-header">Hilfreiche Tools</li>
                     <li><a href="https://elearning.physik.uni-frankfurt.de/local/heartbeat/">Heartbeat</a></li>
                     <li><a href="https://elearning.physik.uni-frankfurt.de/local/pott-graph/">POTT-Graph</a></li>
@@ -82,25 +83,19 @@
 
 
     <div class="container page">
-	<h1>UniPhi <small><a href="http://uniphi.de">uniphi.de</a></small></h1>
+	<h1>SageCell-Server <small><a href="http://sagecell.uni-frankfurt.de>">sagecell.uni-frankfurt.de</a></small></h1>
 
-	<p>UniPhi ist ein zukünftiges Projekt von PhysikOnline, welches den zukünftigen Bedarf nach eLearning aus der Perspektive von Studierenden deckt. Es wird damit
-	die erste Webanwendung nach einer Generation von Lernmanagamentsystemen wie <a href="ilias.html">unserem ILIAS</a> sein, welche den Studierenden nicht den Weg
-	zu Übungsmaterial versperrt, sondern eine Verlinkung von Materialien fördert. Damit dies über eine ontologische Version eines Dateihosters hinausgeht, möchte
-	UniPhi einen Paradigmenwechsel hin zum Lösungsorientierten Lernen erwirken. Da die Etablierung einer solchen Struktur atomar ist und sich Dozierende, die sich der
-	Allgegenwart von Übungslösungen nicht bewusst sind, nicht schonend auf eine solche Software vorbereiten lassen, verzögert sich die Umsetzung von UniPhi seit
-	seiner ersten Formulierung 2014.
+	<p>Die SageMathCell (SMC) ist eine Website zum Entwickeln, Teilen und Einbetten von kleinen Python- bzw SAGE-Berechnungen. Man kann sich diese Technik als das
+	moderne Equivalent von Java-Applets vorstellen, die früher für die multimedialen Lehrbücher der Naturwissenschaften in den 90er und 2000er-Jahren
+	entwickelt wurden. Im Gegensatz zu einem Java-Applet, welches die Bewegungsgleichungen für ein Problem der Mechanik etwa numerisch löst, ist der Quellcode in
+	einer SageMathCell allerdings in der Programmiersprache Python geschrieben, die &mdash; zusammen mit der Softwareumgebung SAGE &mdash; auf jedem Computer läuft
+	und auch in der alltäglichen naturwissenschaftlichen Forschung breite Verwendung findet. Studierende haben hier also die Möglichkeit, anhand von einfachen
+	Modellen unmittelbar mit den Techniken konfrontiert zu werden, die sie später brauchen. Im Gegensatz dazu waren die mittlerweile so verhassten Java-Applets
+	eine technische Machbarkeitsstudie.
 
-	<p>Wir haben zur Umsetzung von UniPhi viele Konzepte aus der Informatik studiert. Das Problem an einer noch nicht existierenden Software wie UniPhi ist, dass man
-	oft dazu neigt, das Werkzeug immer generischer und universeller zu gestalten, um es noch mehr Wünschen gerecht werden zu lassen. Im Ergebnis haben wir oft mit
-	Datenbankmodellen entwickelt, die bis zur Unbrauchbarkeit allgemeingültig waren. Zur Umsetzung von UniPhi haben wir mit nichtrelationalen Datenbanken, Triplets
-	und Ontologien experimentiert. In der webtechnischen Umsetzungen haben wir Fullstack-Frameworks (z.B. Meteor) erprobt.
-
-	<p>Wie in allen PhysikOnline-Projekten beinhaltet der POTT <a href="https://elearning.physik.uni-frankfurt.de/projekt/wiki/UniPhi">Hintergrundinformationen, Anträge und Finanzierungspläne</a>.
-
-
-
-
+	<p>Im Rahmen der Entwicklung von <a href="pokal.html">POKAL</a> ist uns mit der SMC der kleine Bruder der Computeralgebra-Software <em>SAGE</em> aufgefallen.
+	SMC dient dazu, nicht ein gesamtes Sage-Notebook im Web darzustellen, sondern nur eine einzelne Berechnungszelle. Wir decken mit unseren POKAL-Rechenknoten den
+	europaweiten Bedarf aller SageMathCell-Rechnungen als Einbindung in ein globales Lastverteilungssystem ab.
 
       <!-- FOOTER -->
       <footer>
