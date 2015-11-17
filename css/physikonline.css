@@ -15,7 +15,7 @@ footer {
 -------------------------------------------------- */
 .navbar-brand img{
 	margin: -13px 0;
-	max-height: 50px;
+	max-height: 39px;
 	padding-right: 5px;
 }
 
@@ -51,7 +51,58 @@ footer {
 	-webkit-filter: blur(1px);
 }*/
 
-.carousel .carousel-caption > * {
+.carousel .item .dark {
+	/* A dark carousel item, set BG if image does not fill whole canvas */
+	background-color: black;
+}
+
+.carousel .caption {
+	bottom: 0;
+	color: #fff;
+	height: 100%;
+	padding: 1em;
+	position: absolute;
+	text-shadow: 0 2px 6px rgba(0, 0, 0, 0.87);
+	vertical-align: bottom;
+}
+
+.carousel .caption.right {
+	right: 15%;
+	width: 25%;
+}
+
+.carousel .caption.left {
+	left: 15%;
+	width: 25%;
+}
+
+.carousel .caption.dark-bg {
+	background-color: rgba(0, 0, 0, 0.58);
+}
+
+.carousel .caption .content {
+	position: absolute;
+	bottom: 0; left: 0;
+	padding: 1em;
+	text-shadow: 0 1px 1px black;
+}
+
+.carousel .caption h2 {
+	font-weight: normal;
+	font-size: 40px;
+}
+
+.carousel .caption p {
+	font-size: 20px;
+}
+
+.carousel .caption a:link,
+.carousel .caption a:visited {
+	color: #88C6FF;
+	text-decoration: underline;
+}
+
+.carousel .carousel-caption {
 	color: white;
 	background-color: rgba(0,0,0, 0.5);
 	/* Not implemented yet */
