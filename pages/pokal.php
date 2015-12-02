@@ -1,12 +1,8 @@
-<!DOCTYPE html>
-<html lang="de">
-
-
-    <div class="header-picture bottom fullwidth">
+<div class="header-picture bottom fullwidth">
 	<img src="../images/cloud-macbook-pokal.jpg">
-    </div>
+</div>
 
-    <div class="container page after-picture">
+<div class="container page after-picture">
 
 	<h1>POKAL <small><a href="https://pokal.uni-frankfurt.de/">https://pokal.uni-frankfurt.de/</a></small></h1>
 
@@ -41,8 +37,4 @@
 	<p>Auf Seite der Projektverwaltung haben wir über POKAL <a href="https://elearning.physik.uni-frankfurt.de/projekt/wiki/POKAL">Anträge und Grants und die Unterstützung durch SeLF</a>
 	erläutert. Wir haben aber auch viele <a href="http://blog.studiumdigitale.uni-frankfurt.de/self/blog/category/pokal/">Posts im Projektblog zu POKAL</a>
 	geschrieben.
-
-     
-   
-</body>
-</html>
+</div>

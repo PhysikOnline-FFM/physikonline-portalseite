@@ -1,10 +1,8 @@
-<!DOCTYPE html>
-<html lang="de">
-    <div class="header-picture">
+<div class="header-picture">
 	<img src="../images/tinygu-kuerzen.jpg">
-    </div>
+</div>
 
-    <div class="container page after-picture">
+<div class="container page after-picture">
 	<h1>URL-Kürzer für die Uni Frankfurt <small><a href="http://tinygu.de">tinygu.de</a>, <a href="http://goethe.link">goethe.link</a></small></h1>
 
 	<p>Als studentisches Projekt, welches von der personellen und netztechnischen Infrastruktur unseres Institutes, Fachbereiches und unserer
@@ -24,11 +22,4 @@
 	<p>Als am Fachbereich Physik etablierte Institution sowie mit <a href="http://tinygu.de/credits">Unterstützung anderer Institute</a> können wir
 	die langfristige Verfügbarkeit der kurzen Links gewährleisten. Der Dienst bedarf dennoch stetiger Aufmerksamkeit bei der Anpassung von Policies
 	oder der <a href="http://tinygu.de/infos">Entwicklung einer Programmierschnittstelle</a> für Universitätswebsites.
-
-
-     
-
-
-
-</body>
-</html>
+</div>

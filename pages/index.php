@@ -1,6 +1,3 @@
-<!DOCTYPE html>
-<html>
-    <body>
 <!-- Carousel
     ================================================== -->
     <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="8000">
@@ -181,8 +178,6 @@
         </div><!-- /.col-md-4 -->
       </div><!-- /.row 2-->
 	  
+    </div>
 
       
-    
-    </body>
-</html>

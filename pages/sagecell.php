@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="de">
-    <div class="container page">
+<div class="container page">
 	<h1>SageCell-Server <small><a href="http://sagecell.uni-frankfurt.de>">sagecell.uni-frankfurt.de</a></small></h1>
 
 	<p>Die SageMathCell (SMC) ist eine Website zum Entwickeln, Teilen und Einbetten von kleinen Python- bzw SAGE-Berechnungen. Man kann sich diese Technik als das
@@ -14,7 +12,4 @@
 	<p>Im Rahmen der Entwicklung von <a href="pokal.html">POKAL</a> ist uns mit der SMC der kleine Bruder der Computeralgebra-Software <em>SAGE</em> aufgefallen.
 	SMC dient dazu, nicht ein gesamtes Sage-Notebook im Web darzustellen, sondern nur eine einzelne Berechnungszelle. Wir decken mit unseren POKAL-Rechenknoten den
 	europaweiten Bedarf aller SageMathCell-Rechnungen als Einbindung in ein globales Lastverteilungssystem ab.
-
-     
-</body>
-</html>
+</div>

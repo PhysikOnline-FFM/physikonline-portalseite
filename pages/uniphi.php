@@ -1,8 +1,4 @@
-<!DOCTYPE html>
-<html lang="de">
-
-
-    <div class="container page">
+<div class="container page">
 	<h1>UniPhi <small><a href="http://uniphi.de">uniphi.de</a></small></h1>
 
 	<p>UniPhi ist ein zukünftiges Projekt von PhysikOnline, welches den zukünftigen Bedarf nach eLearning aus der Perspektive von Studierenden deckt. Es wird damit
@@ -18,12 +14,4 @@
 	und Ontologien experimentiert. In der webtechnischen Umsetzungen haben wir Fullstack-Frameworks (z.B. Meteor) erprobt.
 
 	<p>Wie in allen PhysikOnline-Projekten beinhaltet der POTT <a href="https://elearning.physik.uni-frankfurt.de/projekt/wiki/UniPhi">Hintergrundinformationen, Anträge und Finanzierungspläne</a>.
-
-
-
-
-
-     
-   
-</body>
-</html>
+</div>

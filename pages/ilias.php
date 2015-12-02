@@ -1,7 +1,3 @@
-<!DOCTYPE html>
-<html lang="de"><head>
-
-
     <div class="header-picture">
 	<img src="../images/ilias-hoersaal.jpg">
     </div>
@@ -50,11 +46,9 @@
 	<p>In der <a href="https://elearning.physik.uni-frankfurt.de/projekt/wiki/ILIAS">Projektorganisation zum ILIAS</a> finden sich zahlreiche Hintergrundinformationen
 	zu unseren Neuerungen im Semesterturnus. Auf der Projektseite dokumentieren wir öffentlich, wie wir zB. Nutzungsvereinbarungen und Datenschutzerklärungen
 	erarbeiten oder die Benutzerschnittstelle diskutieren. Für Interessenten am ILIAS-Unterbau gibt es Informationen zu den Plugins, die wir geschrieben haben.
-
+    </div>
 
       
 
 
-    
-</body>
-</html>
+

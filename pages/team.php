@@ -1,11 +1,8 @@
-<!DOCTYPE html>
-<html lang="de">
-    
-    <div class="header-picture">
+<div class="header-picture">
 	<img src="../images/teamfoto-csc-2014-02.jpg" style="top:-50%;">
-    </div>
+</div>
 
-    <div class="container page after-picture">
+<div class="container page after-picture">
 
 	<h1>Das PhysikOnline-Team</h1>
 
@@ -334,10 +331,4 @@
 		</div>
 	</div>
 	</div><!-- row -->
-
-      
-
-
-   
-</body>
-</html>
+</div>

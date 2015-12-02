@@ -1,11 +1,8 @@
-<!DOCTYPE html>
-<html lang="de">
-
-    <div class="header-picture bottom">
+<div class="header-picture bottom">
 	<img src="../images/physikonline-cube-bokeh.jpg">
-    </div>
+</div>
 
-    <div class="container page after-picture">
+ <div class="container page after-picture">
 	<h1>PhysikOnline Team-Tracker <small><a href="https://elearning.physik.uni-frankfurt.de/projekt">elearning.physik.uni-frankfurt.de/projekt</a></small></h1>
 
 	<p>Der <b>P</b>hysik<b>O</b>nline <b>T</b>eam-<b>T</b>racker ist das Herzstück der Organisation von PhysikOnline. Es handelt sich um eine Projektmanagamentwebsite,
@@ -25,11 +22,4 @@
 	Auch für RiedbergTV wird mit <a href="https://de.atlassian.com/software/confluence">Confluence</a> eine Alternativsoftware gesucht. Der POTT ist sicher nicht optimal, aber
 	es zeigt sich, dass man hartnäckig rütteln muss, um ihn loszuwerden. Zu einfach integriert er sich in den Arbeitsfluss und ist entsprechender Bestandteil der täglichen
 	Arbeit bei PhysikOnline.
-
-
-
-    
-
-   
-</body>
-</html>
+</div>

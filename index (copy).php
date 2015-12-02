@@ -6,29 +6,31 @@
 -->
 
 <?php
-        //define "pageNameInNavbar" => array("Link"=>("linkToPhpFile"),"Head"=>("headerText"))
-        //pages in front of dropdown menu
-        $mainpages = array("Überblick"        =>array("Link"=>array("pages/index.php"),"Head"=>array("PhysikOnline: Studentisches eLearning der Physik an der Goethe-Universität, Frankfurt")),
-                           "ILIAS"            =>array("Link"=>array("pages/ilias.php"),"Head"=>array("Ilias - was ist das? - PhysikOnline")),
-                           "POKAL"            =>array("Link"=>array("pages/pokal.php"),"Head"=>array("POKAL - PhysikOnline")),
-                           "RiedbergTV"       =>array("Link"=>array("pages/riedbergtv.php"),"Head"=>array("RiedbergTV - PhysikOnline")),
-                          );
-        //pages in dropdown menu                                 
-        $menupages = array("URL Shortener"    =>array("Link"=>array("pages/tinygu.php"),"Head"=>array("TinyGU - PhysikOnline")),
-                           "POTT"             =>array("Link"=>array("pages/pott.php"),"Head"=>array("POTT - PhysikOnline")),
-                           "POAK"             =>array("Link"=>array("pages/poak.php"),"Head"=>array("POAK - PhysikOnline")),
-                           "Podcast Physik"   =>array("Link"=>array("pages/podcastphysik.php"),"Head"=>array("Die Podcast-Wiki Physik - PhysikOnline")),
-                           "Uniphi"           =>array("Link"=>array("pages/uniphi.php"),"Head"=>array("UniPhi - PhysikOnline")),
-                           "SageCell"         =>array("Link"=>array("pages/sagecell.php"),"Head"=>array("SageCell-Server - PhysikOnline")),
-                          );
-        //pages after the dropdown menu             
-        $aftermenupages = array("Team"        =>array("Link"=>array("pages/team.php"),"Head"=>array("Das Team von PhysikOnline an der Goethe-Universität")),
-                               );
-              
-        $allpages = array_merge($mainpages, $menupages, $aftermenupages);
-        $keypages = array_keys($allpages);
+        //define "pageNameInNavbar" => array("linkToPhpFile","headerText"), remember to change the values below!
+        $pages=array("Überblick"        =>array("pages/index.php","PhysikOnline: Studentisches eLearning der Physik an der Goethe-Universität, Frankfurt"),
+                     "ILIAS"            =>array("pages/ilias.php","Ilias - was ist das? - PhysikOnline"),
+                     "POKAL"            =>array("pages/pokal.php","POKAL - PhysikOnline"),
+                     "RiedbergTV"       =>array("pages/riedbergtv.php","RiedbergTV - PhysikOnline"),
+                                         
+                     "URL Shortener"    =>array("pages/tinygu.php","TinyGU - PhysikOnline"),
+                     "POTT"             =>array("pages/pott.php","POTT - PhysikOnline"),
+                     "POAK"             =>array("pages/poak.php","POAK - PhysikOnline"),
+                     "Podcast Physik"   =>array("pages/podcastphysik.php","Die Podcast-Wiki Physik - PhysikOnline"),
+                     "Uniphi"           =>array("pages/uniphi.php","UniPhi - PhysikOnline"),
+                     "SageCell"         =>array("pages/sagecell.php","SageCell-Server - PhysikOnline"),
+                     
+                     "Team"             =>array("pages/team.php","Das Team von PhysikOnline an der Goethe-Universität"),
+                    );
+
+        //define how many navbar-items are in front of, in and after the dropdown menu
+        $inFrontOfMenu = 4;
+        $inMenu = 6;
+        $afterMenu = 1;
+        
+        $section=array(0,$inFrontOfMenu,$inFrontOfMenu+$inMenu,count($pages));
+        $spages=array_keys($pages);
         //set up active page
-        $activepage = isset($_GET["page"]) ? $_GET["page"] : $keypages[0];
+        $activepage = isset($_GET["page"]) ? $_GET["page"]: $spages[0];
 ?>
 
 <html lang="de"><head>
@@ -43,10 +45,10 @@
 
     <title>
         <?php 
-            if (isset($activepage) and in_array($activepage,$keypages))
+            if (isset($activepage) and in_array($activepage,$spages))
             {
                 //get header text
-                echo($allpages[$activepage]["Head"][0]);
+                echo($pages[$activepage][1]);
             }
             else 
             {
@@ -76,7 +78,7 @@
 <body>
     <div class="navbar-wrapper">
         <div class="container">
-            <nav class="navbar <?php //echo(in_array($activepage, array_keys($menupages)) ? "navbar-inverse" : "navbar-default") ?> navbar-default navbar-static-top">
+            <nav class="navbar navbar-default navbar-static-top">
                 <div class="container">
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -91,10 +93,11 @@
                         <ul class="nav navbar-nav">
                             <?php
                             //build navbar-links
-                            foreach ($mainpages as $name => $link) 
+                            for ($i=$section[0];$i<$section[1];$i++) 
                             {
+                                $name=$spages[$i];
                                 //first one just to get the homepage working
-                                if (!isset($activepage) and $name==$keypages[0]) {
+                                if (!isset($activepage) and $name==$spages[0]) {
                                     echo ("<li class='active'> <a href='/'> $name </a> </li>");
                                 } 
                                 //set current link as active
@@ -108,14 +111,21 @@
                             }                        
                             ?>
 
-                            <li class="dropdown <?php echo(in_array($activepage, array_keys($menupages)) ? "active" : "") ?>">
+                            <li class="dropdown">
                                 <a href="#more" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Weitere Projekte <span class="caret"></span></a>
                                 <ul class="dropdown-menu">
                                     <li class="dropdown-header">Weitere Projekte</li>
                                     <?php
                                         //build navbar-links
-                                        foreach ($menupages as $name => $link) {
-                                            echo ($activepage==$name ? "<li class='active'> <a href='?page=$name'> $name </a> </li>" : "<li> <a href='?page=$name'> $name </a> </li>");
+                                        for ($i=$section[1];$i<$section[2];$i++) 
+                                        {
+                                            $name=$spages[$i];
+                                            if ($activepage==$name) {
+                                                echo ("<li class='active'> <a href='?page=$name'> $name </a> </li>");
+                                            } 
+                                            else {
+                                                echo ("<li> <a href='?page=$name'> $name </a> </li>");
+                                            }    
                                         }                        
                                     ?>
                                     <li class="dropdown-header">Hilfreiche Tools</li>
@@ -125,8 +135,15 @@
                             </li>
                                 <?php
                                     //build navbar-links
-                                    foreach ($aftermenupages as $name => $link) {
-                                        echo ($activepage==$name ? "<li class='active'> <a href='?page=$name'> $name </a> </li>" : "<li> <a href='?page=$name'> $name </a> </li>");
+                                    for ($i=$section[2];$i<$section[3];$i++) 
+                                    {
+                                        $name=$spages[$i];
+                                        if ($activepage==$name) {
+                                            echo ("<li class='active'> <a href='?page=$name'> $name </a> </li>");
+                                        } 
+                                        else {
+                                            echo ("<li> <a href='?page=$name'> $name </a> </li>");
+                                        }    
                                     }                        
                                 ?>
                         </ul>
@@ -148,14 +165,18 @@
     
     <!-- include actual site content -->
     <?php
-        if (isset($activepage) and in_array($activepage,$keypages)) {
-            foreach ($allpages as $name => $info) {
-                if ($activepage == $name) {   
-                    require $info["Link"][0];
+        if (isset($activepage) and in_array($activepage,$spages)) 
+        {
+            foreach ($pages as $name => $link) 
+            {
+                if ($activepage == $name)
+                {   
+                    require $link[0];
                 }
             }
         }
-        else {
+        else 
+        {
             //defaults to homepage
             require ("pages/index.php");
         }

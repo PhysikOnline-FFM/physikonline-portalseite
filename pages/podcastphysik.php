@@ -1,11 +1,8 @@
-<!DOCTYPE html>
-<html lang="de">
-
-    <div class="header-picture bottom">
+<div class="header-picture bottom">
 	<img src="../images/osz-bei-nacht.jpg">
-    </div>
+</div>
 
-    <div class="container page after-picture">
+<div class="container page after-picture">
 	<h1>Podcast-Wiki Physik <small><a href="http://podcast-wiki.physik.uni-frankfurt.de">podcast-wiki.physik.uni-frankfurt.de</a></small></h1>
 
 	<p>Die Podcast-Wiki Physik war das erste separate Projekt von PhysikOnline, nach dem Kernprojekt ILIAS. Es wurde im Rahmen des ersten studentischen
@@ -53,10 +50,4 @@
 	<p>Die Podcast-Wiki selber ist mit einem <a href="http://podcast-wiki.physik.uni-frankfurt.de/wiki/PodcastWiki:%C3%9Cber_PodcastWiki">umfangreichen Dokumentationsbereich <em>Über Podcastwiki</em></a> ausgestattet.
 	Wie für alle anderen PhysikOnline-Projekte gibt es im POTT eine fast vollständige <a href="https://elearning.physik.uni-frankfurt.de/projekt/wiki/Podcast-Wiki-Physik">Organisationsgeschichte und Dokumentation von Podcast-Wiki Physik</a>.
 	Dort sind auch viele Tipps zum Umgang mit Software und Ausstattung gesammelt sowie viele Videoprojekte dokumentiert.
-
-
-      
-
-   
-</body>
-</html>
+</div>
