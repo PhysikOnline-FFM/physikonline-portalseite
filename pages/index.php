@@ -1,89 +1,7 @@
 <!DOCTYPE html>
-<html lang="de"><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="PhysikOnline ist mehr als eine eLearning-Plattform. Wir sind ein Team aus Studenten, die viele Projekte entwickelt haben und ständig neue Ideen umsetzen. Schau es dir an und mach mit!">
-    <meta name="author" content="Philip Arnold">
-    <link rel="icon" href="/favicon.ico">
-
-    <title>PhysikOnline: Studentisches eLearning der Physik an der Goethe-Universität, Frankfurt</title>
-
-    <!-- styles -->
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
-	<link href="//pokal.uni-frankfurt.de/data/bootstrap-3.2.0/css/bootstrap-theme.pokal2.css" rel="stylesheet">
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-    <!-- Custom styles for this template -->
-    <link href="/css/carousel.css" rel="stylesheet">
-	<link href="/css/physikonline.css" rel="stylesheet">
-  </head>
-<!-- NAVBAR
-================================================== -->
-  <body>
-    <div class="navbar-wrapper">
-      <div class="container">
-
-        <nav class="navbar navbar-default navbar-static-top">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="/"><img src="//elearning.physik.uni-frankfurt.de/Customizing/global/skin/physik/src/logo_small-new.png" alt="" />PhysikOnline</a>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                <li class="active"><a href="/">Überblick</a></li>
-	        <li><a href="/pages/ilias.html">ILIAS</a></li>
-		<li><a href="/pages/pokal.html">POKAL</a></li>
-		<li><a href="/pages/riedbergtv.html">RiedbergTV</a></li>
-				
-                <li class="dropdown">
-                  <a href="#more" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Weitere Projekte <span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-					<li class="dropdown-header">Weitere Projekte</li>
-					<li><a href="/pages/tinygu.html">URL Shortener</a></li>
-					<li><a href="/pages/pott.html">POTT</a></li>
-					<li><a href="/pages/poak.html">POAK</a></li>
-					<li><a href="/pages/sagecell.html">SageCell</a></li>
-					<li><a href="/pages/podcastphysik.html">Podcast Physik</a></li>
-					<li><a href="/pages/uniphi.html">Uniphi</a></li>
-                   <li class="dropdown-header">Hilfreiche Tools</li>
-                    <li><a href="https://elearning.physik.uni-frankfurt.de/local/heartbeat/">Heartbeat</a></li>
-                    <li><a href="https://elearning.physik.uni-frankfurt.de/local/pott-graph/">POTT-Graph</a></li>
-                  </ul>
-                </li>
-		<li><a href="/pages/team.html">Team</a></li>
-              </ul>
-	      <ul class="nav navbar-nav pull-right">	
-		<li class="dropdown">
-                  <a href="#about" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Über uns <span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="mailto:team@elearning.physik.uni-frankfurt.de">Kontakt</a></li>
-                    <li><a href="https://elearning.physik.uni-frankfurt.de/go/impressum">Impressum</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-
-      </div>
-    </div>
-
-
-    <!-- Carousel
+<html>
+    <body>
+<!-- Carousel
     ================================================== -->
     <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="8000">
       <!-- Indicators -->
@@ -112,7 +30,7 @@
             <div class="caption right dark-bg">
 		<div class="content">
 		      <h2>PhysikOnline = ILIAS?</h2>
-		      <p>Wir machen mehr als Lernmanagament: <a href="pages/ilias.html">ILIAS</a> ist nur eine unserer Aufgaben.</p>
+		      <p>Wir machen mehr als Lernmanagament: <a href="?page=ILIAS">ILIAS</a> ist nur eine unserer Aufgaben.</p>
 		</div>
             </div>
         </div>
@@ -121,7 +39,7 @@
             <div class="caption left">
 		<div class="content">
 		      <h1>POKAL</h1>
-		      <p><a href="pages/pokal.html">POKAL</a> ist unsere kollaborative Arbeits- und Lernplattform.</p>
+		      <p><a href="?page=POKAL">POKAL</a> ist unsere kollaborative Arbeits- und Lernplattform.</p>
 		</div>
            </div>
         </div>
@@ -130,7 +48,7 @@
             <div class="caption right dark-bg">
 		<div class="content">
 		      <h1>Goethe.link</h1>
-		      <p>Goethe war Dichter! Unser <a href="pages/tinygu.html">Link-Kürzer</a> vereinfacht die Lehre.</p>
+		      <p>Goethe war Dichter! Unser <a href="?page=URL Shortener">Link-Kürzer</a> vereinfacht die Lehre.</p>
 		</div>
            </div>
         </div>
@@ -139,7 +57,7 @@
             <div class="caption left dark-bg">
 		<div class="content">
 		      <h1>Wir kollaborieren</h1>
-		      <p>Mit <a href="pages/riedbergtv.html">RiedbergTV</a> starten wir 2015 ein interdisziplinäres Projekt.</p>
+		      <p>Mit <a href="?page=RiedbergTV">RiedbergTV</a> starten wir 2015 ein interdisziplinäres Projekt.</p>
 		</div>
            </div>
         </div>
@@ -189,7 +107,7 @@
     <div class="container marketing">
       <div class="row text-center">
         <div class="col-md-4">
-		<a href="pages/ilias.html" class="metro metro-1">
+		<a href="?page=ILIAS" class="metro metro-1">
 			<img class="img-circle" src="//elearning.physik.uni-frankfurt.de/local/logos/ilias-logo.png" alt="" height="140" width="140">
 			<h2>ILIAS</h2>
 			<p>...ist die Software, die hinter dem eLearning-Portal am Fachbereich Physik steckt und aus Köln kommt. Unser Team ist jedoch für den Support, Wartung und Aktualität der von uns betriebenen Instanz verantwortlich.</p>
@@ -197,7 +115,7 @@
         </div>
 		
         <div class="col-md-4">
-		<a href="pages/riedbergtv.html" class="metro metro-2">
+		<a href="?page=RiedbergTV" class="metro metro-2">
 			<img class="img-circle" src="/images/logo-riedbergTV-3.png" alt="" height="140" width="140">
 			<h2>RiedbergTV</h2>
 			<p>...ist ein studentisches Videoprojekt mit dem Ziel, die Fachbereiche am Campus Riedberg auf besondere Weise in einem Projekt zusammenarbeiten zu lassen. Willst du mehr erfahren und mit machen?</p>
@@ -205,7 +123,7 @@
         </div>
 		
         <div class="col-md-4">
-		<a href="pages/pokal.html" class="metro metro-1">
+		<a href="?page=POKAL" class="metro metro-1">
 			<img class="img-circle" src="/images/logo-pokal-2.png" alt="" height="140" width="140">
 			<h2>POKAL</h2>
 			<p>...ist unsere studentische Initiative ein Computer Algebrasystem am Fachbereich zu etablieren, das wir durch viel Eigenentwicklung um inovative Funktionen zum kollaborativen Arbeiten erweitert haben.</p>
@@ -215,7 +133,7 @@
 	  
       <div class="row text-center">
         <div class="col-md-4">
-		<a href="pages/tinygu.html" class="metro metro-2">
+		<a href="?page=URL Shortener" class="metro metro-2">
 			<img class="img-circle" src="/images/goethe.link.png" alt="" height="140" width="140">
 			<h2>URL Shortener</h2>
 			<p>Es gibt viele URL Shortener im Web, aber wir möchten für die Goethe Universität einen anbieten, dem bedingungslos vertraut werden kann und der eine Beziehung zu unserer Uni herstellt!</p>
@@ -229,7 +147,7 @@
         </div>
 		
         <div class="col-md-4">
-		<a href="pages/poak.html" class="metro metro-2">
+		<a href="?page=ILIAS" class="metro metro-2">
 			<img class="img-circle" src="/images/poak-physikplotting.png" alt="" height="140" width="140">
 			<h2>POAK</h2>
 			<p>...ist eine Anwendung, die wir zusätzlich zu POKAL entwickelt haben, um POKAL-Arbeitsblätter für jeden zugänglich zu machen und thematisch suchen zu können.</p>
@@ -239,7 +157,7 @@
 	  
       <div class="row text-center">
         <div class="col-md-4">
-		<a href="pages/podcastwiki.html" class="metro metro-1">
+		<a href="?page=Podcast Physik" class="metro metro-1">
 			<img class="img-circle" src="/images/pwp-camera.png" alt="" height="140" width="140">
 			<h2>Podcast Wiki Physik</h2>
 			<p>...war unser erstes student. Videoprojekt, das Experimente vorführte, Professoren und Arbeitsgruppen vorstellte und über weitere Aktivitäten am Fachbereich informierte.</p>
@@ -247,7 +165,7 @@
         </div>
 		
         <div class="col-md-4">
-		<a href="pages/pott.html" class="metro metro-2">
+		<a href="?page=POTT" class="metro metro-2">
 			<img src="//elearning.physik.uni-frankfurt.de/projekt/raw-attachment/wiki/POTT/Coffe-Cup.png" alt="" height="140" width="140">
 			<h2>POTT</h2>
 			<p>...ist unser Team-Tracker, der als Organisationsbereich sowohl zum Nachschlagen von Dokumentation, zum Diskutieren als auch zum Notieren von Aufgaben und interessanten Themen dient.</p>
@@ -264,26 +182,7 @@
       </div><!-- /.row 2-->
 	  
 
-      <!-- FOOTER -->
-      <footer>
-        <p class="pull-right"><a href="#">Nach oben</a></p>
-        <p>© 2015 PhysikOnline &bull; <a href="mailto:team@elearning.physik.uni-frankfurt.de">Kontakt</a>
-	&bull; <a href="https://elearning.physik.uni-frankfurt.de/go/nutzungsvereinbarung">Nutzungsvereinbarungen</a>
-	&bull; <a href="https://elearning.physik.uni-frankfurt.de/go/datenschutz">Datenschutz</a>
-	&bull; <a href="https://elearning.physik.uni-frankfurt.de/go/impressum">Impressum</a>
-	</p>
-      </footer>
-    </div><!-- /.container -->
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="/js/ie10-viewport-bug-workaround.js"></script>
-  
-
-</body></html>
+      
+    
+    </body>
+</html>
