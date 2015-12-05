@@ -25,7 +25,7 @@
 	<p>Ein Lernmanagamentsystem wird von Studierenden oft als etwas empfunden, was ihnen auf dem Weg zu den gewünschten Lernmaterialien im Weg steht. Da wir
 	selbst Studierende sind, verstehen wir die Probleme und arbeiten an Lösungen, unsere Software attraktiver zu gestalten. So führen bei uns weniger Klicks
 	zum Ziel. Wir erleben im PhysikOnline-Team, dass Lernplattformen niemandem Spaß machen. Deswegen suchen wir nach Alternativen, um den Wünschen von Lehrenden
-	gerecht zu werden. Auf diesem Weg ist zum Beispiel das Projekt <a href="pokal.html">POKAL</a> entstanden. Auch die <a href="podcastphysik.html">Podcast-Wiki
+	gerecht zu werden. Auf diesem Weg ist zum Beispiel das Projekt <a href="?page=POKAL">POKAL</a> entstanden. Auch die <a href="?page=Podcast Physik">Podcast-Wiki
 	Physik</a> ist ein Produkt unseres Brainstormings, eLearning-Alternativen aufzuzeigen.
 
 	<p>Als studentisches Projekt verstehen wir uns als Sprachrohr und Wegbereiter einer neuen Generation der Studierenden, die in den Medien oft als

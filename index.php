@@ -29,6 +29,10 @@
         $keypages = array_keys($allpages);
         //set up active page
         $activepage = isset($_GET["page"]) ? $_GET["page"] : $keypages[0];
+
+        function print_link($key,$name) {
+            echo ("<a href='?page=$key'>$name</a>");
+        }
 ?>
 
 <html lang="de"><head>
