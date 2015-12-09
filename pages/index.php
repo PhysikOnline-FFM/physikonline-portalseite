@@ -137,8 +137,8 @@
 		</a>
         </div>
 		
-        <div class="col-md-4 metro metro-0">
-		  <img class="" src="//elearning.physik.uni-frankfurt.de/Customizing/global/skin/physik/src/logo_big.jpg" alt="" width="140">
+        <div class="col-md-4 metro metro-0 focus">
+		  <img class="" src="//elearning.physik.uni-frankfurt.de/Customizing/global/skin/physik/src/logo_big.png" alt="" width="140">
 		  <h2>Unser Universum</h2>
 		  <p class="">Das alles und heute bereits mehr macht das PhysikOnline-Team!</p>
         </div>
