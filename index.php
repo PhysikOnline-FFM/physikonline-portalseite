@@ -6,29 +6,71 @@
 -->
 
 <?php
-        //define "pageNameInNavbar" => array("Link"=>("linkToPhpFile"),"Head"=>("headerText"))
         //pages in front of dropdown menu
-        $mainpages = array("Überblick"        =>array("Link"=>array("pages/index.php"),"Head"=>array("PhysikOnline: Studentisches eLearning der Physik an der Goethe-Universität, Frankfurt")),
-                           "ILIAS"            =>array("Link"=>array("pages/ilias.php"),"Head"=>array("Ilias - was ist das? - PhysikOnline")),
-                           "POKAL"            =>array("Link"=>array("pages/pokal.php"),"Head"=>array("POKAL - PhysikOnline")),
-                           "RiedbergTV"       =>array("Link"=>array("pages/riedbergtv.php"),"Head"=>array("RiedbergTV - PhysikOnline")),
+        $mainpages = array("Überblick"        =>array(
+													"tpl_file" =>"pages/index.php",
+													"link"=>array("title"=>"", "href"=>"/"),
+													"head"=>array("keywords"=>"", "description"=>"", "title"=>"PhysikOnline: Studentisches eLearning der Physik an der Goethe-Universität, Frankfurt")
+													),
+                           "ILIAS"            =>array(
+													"tpl_file" =>"pages/ilias.php",
+													"link"=>array("title"=>"", "href"=>"pages/ilias"),
+													"head"=>array("keywords"=>"", "description"=>"", "title"=>"Ilias - was ist das? - PhysikOnline")
+													),
+                           "POKAL"            =>array(
+													"tpl_file" =>"pages/pokal.php",
+													"link"=>array("title"=>"", "href"=>"pages/pokal"),
+													"head"=>array("keywords"=>"", "description"=>"", "title"=>"POKAL - PhysikOnline")
+													),
+                           "RiedbergTV"       =>array(
+													"tpl_file" =>"pages/riedbergtv.php",
+													"link"=>array("title"=>"", "href"=>"pages/riedbergtv"),
+													"head"=>array("keywords"=>"", "description"=>"", "title"=>"RiedbergTV - PhysikOnline")
+													),
                           );
         //pages in dropdown menu                                 
-        $menupages = array("URL Shortener"    =>array("Link"=>array("pages/tinygu.php"),"Head"=>array("TinyGU - PhysikOnline")),
-                           "POTT"             =>array("Link"=>array("pages/pott.php"),"Head"=>array("POTT - PhysikOnline")),
-                           "POAK"             =>array("Link"=>array("pages/poak.php"),"Head"=>array("POAK - PhysikOnline")),
-                           "Podcast Physik"   =>array("Link"=>array("pages/podcastphysik.php"),"Head"=>array("Die Podcast-Wiki Physik - PhysikOnline")),
-                           "Uniphi"           =>array("Link"=>array("pages/uniphi.php"),"Head"=>array("UniPhi - PhysikOnline")),
-                           "SageCell"         =>array("Link"=>array("pages/sagecell.php"),"Head"=>array("SageCell-Server - PhysikOnline")),
+        $menupages = array("URL Shortener"    =>array(
+													"tpl_file" =>"pages/tinygu",
+													"link"=>array("title"=>"", "href"=>"pages/tinygu"),
+													"head"=>array("keywords"=>"", "description"=>"", "title"=>"TinyGU - PhysikOnline")
+													),
+                           "POTT"             =>array(
+						   							"tpl_file" =>"pages/pott.php",
+													"link"=>array("title"=>"", "href"=>"pages/pott"),
+													"head"=>array("keywords"=>"", "description"=>"", "title"=>"POTT - PhysikOnline")
+													),
+                           "POAK"             =>array(
+						   							"tpl_file" =>"pages/poak.php",
+													"link"=>array("title"=>"", "href"=>"pages/poak"),
+													"head"=>array("keywords"=>"", "description"=>"", "title"=>"POAK - PhysikOnline")
+													),
+                           "Podcast Physik"   =>array(
+						   							"tpl_file" =>"pages/podcastphysik.php",
+													"link"=>array("title"=>"", "href"=>"pages/podcastphysik"),
+													"head"=>array("keywords"=>"", "description"=>"", "title"=>"Die Podcast-Wiki Physik - PhysikOnline")
+													),
+                           "Uniphi"           =>array(
+						   							"tpl_file" =>"pages/uniphi.php",
+													"link"=>array("title"=>"", "href"=>"pages/uniphi"),
+													"head"=>array("keywords"=>"", "description"=>"", "title"=>"UniPhi - PhysikOnline")
+													),
+                           "SageCell"         =>array(
+						   							"tpl_file" =>"pages/sagecell.php",
+													"link"=>array("title"=>"", "href"=>"pages/sagecell"),
+													"head"=>array("keywords"=>"", "description"=>"", "title"=>"SageCell-Server - PhysikOnline")
+													),
                           );
         //pages after the dropdown menu             
-        $aftermenupages = array("Team"        =>array("Link"=>array("pages/team.php"),"Head"=>array("Das Team von PhysikOnline an der Goethe-Universität")),
+        $aftermenupages = array("Team"        =>array(
+													"link"=>array("pages/team.php"),
+													"head"=>array("Das Team von PhysikOnline an der Goethe-Universität")
+													),
                                );
               
         $allpages = array_merge($mainpages, $menupages, $aftermenupages);
-        $keypages = array_keys($allpages);
+        $keypages = array_keys(array_change_key_case($allpages,CASE_LOWER));
         //set up active page
-        $activepage = isset($_GET["page"]) ? $_GET["page"] : $keypages[0];
+        $activepage = isset($_GET["page"]) ? strtolower($_GET["page"]) : strtolower($keypages[0]);
 ?>
 
 <html lang="de"><head>
@@ -46,7 +88,7 @@
             if (isset($activepage) and in_array($activepage,$keypages))
             {
                 //get header text
-                echo($allpages[$activepage]["Head"][0]);
+                echo($allpages[$activepage]["head"]["title"]);
             }
             else 
             {
@@ -151,13 +193,13 @@
         if (isset($activepage) and in_array($activepage,$keypages)) {
             foreach ($allpages as $name => $info) {
                 if ($activepage == $name) {   
-                    require $info["Link"][0];
+                    require($info["tpl_file"]);
                 }
             }
         }
         else {
             //defaults to homepage
-            require ("pages/index.php");
+            require("pages/index.php");
         }
         
     ?>
