@@ -1,80 +1,104 @@
-<!DOCTYPE html>
-<!--
-    Bugs: Team-Seite funktioniert nicht richtig, da mit Bootstrap 3.3 die Navbar-Brand nicht richtig aussieht
-    
-    ToDo: Filter und Profile in Team-Seite
--->
+<!DOCTYPE html><?php
 
-<?php
-        //pages in front of dropdown menu
-        $mainpages = array("Überblick"        =>array(
-													"tpl_file" =>"pages/index.php",
-													"link"=>array("title"=>"", "href"=>"/"),
-													"head"=>array("keywords"=>"", "description"=>"", "title"=>"PhysikOnline: Studentisches eLearning der Physik an der Goethe-Universität, Frankfurt")
-													),
-                           "ILIAS"            =>array(
-													"tpl_file" =>"pages/ilias.php",
-													"link"=>array("title"=>"", "href"=>"pages/ilias"),
-													"head"=>array("keywords"=>"", "description"=>"", "title"=>"Ilias - was ist das? - PhysikOnline")
-													),
-                           "POKAL"            =>array(
-													"tpl_file" =>"pages/pokal.php",
-													"link"=>array("title"=>"", "href"=>"pages/pokal"),
-													"head"=>array("keywords"=>"", "description"=>"", "title"=>"POKAL - PhysikOnline")
-													),
-                           "RiedbergTV"       =>array(
-													"tpl_file" =>"pages/riedbergtv.php",
-													"link"=>array("title"=>"", "href"=>"pages/riedbergtv"),
-													"head"=>array("keywords"=>"", "description"=>"", "title"=>"RiedbergTV - PhysikOnline")
-													),
-                          );
-        //pages in dropdown menu                                 
-        $menupages = array("URL Shortener"    =>array(
-													"tpl_file" =>"pages/tinygu",
-													"link"=>array("title"=>"", "href"=>"pages/tinygu"),
-													"head"=>array("keywords"=>"", "description"=>"", "title"=>"TinyGU - PhysikOnline")
-													),
-                           "POTT"             =>array(
-						   							"tpl_file" =>"pages/pott.php",
-													"link"=>array("title"=>"", "href"=>"pages/pott"),
-													"head"=>array("keywords"=>"", "description"=>"", "title"=>"POTT - PhysikOnline")
-													),
-                           "POAK"             =>array(
-						   							"tpl_file" =>"pages/poak.php",
-													"link"=>array("title"=>"", "href"=>"pages/poak"),
-													"head"=>array("keywords"=>"", "description"=>"", "title"=>"POAK - PhysikOnline")
-													),
-                           "Podcast Physik"   =>array(
-						   							"tpl_file" =>"pages/podcastphysik.php",
-													"link"=>array("title"=>"", "href"=>"pages/podcastphysik"),
-													"head"=>array("keywords"=>"", "description"=>"", "title"=>"Die Podcast-Wiki Physik - PhysikOnline")
-													),
-                           "Uniphi"           =>array(
-						   							"tpl_file" =>"pages/uniphi.php",
-													"link"=>array("title"=>"", "href"=>"pages/uniphi"),
-													"head"=>array("keywords"=>"", "description"=>"", "title"=>"UniPhi - PhysikOnline")
-													),
-                           "SageCell"         =>array(
-						   							"tpl_file" =>"pages/sagecell.php",
-													"link"=>array("title"=>"", "href"=>"pages/sagecell"),
-													"head"=>array("keywords"=>"", "description"=>"", "title"=>"SageCell-Server - PhysikOnline")
-													),
-                          );
-        //pages after the dropdown menu             
-        $aftermenupages = array("Team"        =>array(
-													"link"=>array("pages/team.php"),
-													"head"=>array("Das Team von PhysikOnline an der Goethe-Universität")
-													),
-                               );
-              
-        $allpages = array_merge($mainpages, $menupages, $aftermenupages);
-        $keypages = array_keys(array_change_key_case($allpages,CASE_LOWER));
-        //set up active page
-        $activepage = isset($_GET["page"]) ? strtolower($_GET["page"]) : strtolower($keypages[0]);
+/**
+Bugs: Team-Seite funktioniert nicht richtig, da mit Bootstrap 3.3 die Navbar-Brand nicht richtig aussieht
+ToDo: Filter und Profile in Team-Seite
+*/
+
+//pages in front of dropdown menu
+$mainpages = array("startseite"        => array(
+											"name" => "Überblick",
+											"tpl_file" => "pages/index.php",
+											"link" => array("title"=>"", "href"=>"/"),
+											"head" => array("keywords"=>"", "description"=>"", "title"=>"PhysikOnline: Studentisches eLearning der Physik an der Goethe-Universität, Frankfurt")
+											),
+				   "ilias"            => array(
+											"name" => "ILIAS",
+											"tpl_file" => "pages/ilias.php",
+											"link" => array("title"=>"", "href"=>"/pages/ilias"),
+											"head" => array("keywords"=>"", "description"=>"", "title"=>"Ilias - was ist das? - PhysikOnline")
+											),
+				   "pokal"            => array(
+											"name" => "POKAL",
+											"tpl_file" =>"pages/pokal.php",
+											"link" => array("title"=>"", "href"=>"/pages/pokal"),
+											"head" => array("keywords"=>"", "description"=>"", "title"=>"POKAL - PhysikOnline")
+											),
+				   "riedbergtv"       => array(
+											"name" => "RiedbergTV",
+											"tpl_file" =>"pages/riedbergtv.php",
+											"link" => array("title"=>"", "href"=>"/pages/riedbergtv"),
+											"head" => array("keywords"=>"", "description"=>"", "title"=>"RiedbergTV - PhysikOnline")
+											),
+				  );
+//pages in dropdown menu                                 
+$menupages = array("tinygu"           => array(
+											"name" => "URL Shortener",
+											"tpl_file" =>"pages/tinygu.php",
+											"link" => array("title"=>"", "href"=>"/pages/tinygu"),
+											"head" => array("keywords"=>"", "description"=>"", "title"=>"TinyGU - PhysikOnline")
+											),
+				   "pott"             => array(
+											"name" => "POTT",
+											"tpl_file" =>"pages/pott.php",
+											"link" => array("title"=>"", "href"=>"/pages/pott"),
+											"head" => array("keywords"=>"", "description"=>"", "title"=>"POTT - PhysikOnline")
+											),
+				   "poak"             => array(
+											"name" => "POAK",
+											"tpl_file" =>"pages/poak.php",
+											"link" => array("title"=>"", "href"=>"/pages/poak"),
+											"head" => array("keywords"=>"", "description"=>"", "title"=>"POAK - PhysikOnline")
+											),
+				   "podcastwiki"      => array(
+											"name" => "Podcast Physik",
+											"tpl_file" =>"pages/podcastphysik.php",
+											"link" => array("title"=>"", "href"=>"/pages/podcastwiki"),
+											"head" => array("keywords"=>"", "description"=>"", "title"=>"Die Podcast-Wiki Physik - PhysikOnline")
+											),
+				   "uniphi"           => array(
+											"name" => "Uniphi",
+											"tpl_file" =>"pages/uniphi.php",
+											"link" => array("title"=>"", "href"=>"/pages/uniphi"),
+											"head" => array("keywords"=>"", "description"=>"", "title"=>"UniPhi - PhysikOnline")
+											),
+				   "sagecell"         => array(
+											"name" => "SageCell",
+											"tpl_file" =>"pages/sagecell.php",
+											"link" => array("title"=>"", "href"=>"/pages/sagecell"),
+											"head" => array("keywords"=>"", "description"=>"", "title"=>"SageCell-Server - PhysikOnline")
+											),
+				  );
+//pages after the dropdown menu             
+$aftermenupages = array("team"        => array(
+											"name" => "Team",
+											"tpl_file" =>"pages/team.php",
+											"link" => array("title"=>"", "href"=>"/pages/team"),
+											"head" => array("keywords"=>"", "description"=>"Alle Teammitglieder von PhysikOnline an der Goethe-Universität", "title"=>"PhysikOnline-Team der GU")
+											),
+					   );
+	  
+$allpages = array_merge($mainpages, $menupages, $aftermenupages);
+$keypages = array_keys($allpages);
+//set up active page
+$activepage = isset($_GET["page"]) ? strtolower($_GET["page"]) : strtolower($keypages[0]);
+
+function print_link($key, $text=Null, $css_class="", $return_str=False){
+	global $allpages;
+	$text = (isset($text) ? $text : $allpages[$key]['name']);
+	$href = $allpages[$key]['link']['href'];
+	$title = isset($allpages[$key]['link']['title']) ? $allpages[$key]['link']['title'] : "Zu $text";
+	$a = "<a href='$href' title='$title' class='$css_class'>$text</a>";
+	if ($return_str)
+		return $a;
+	else
+		echo $a;
+}
 ?>
 
-<html lang="de"><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<html lang="de">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -85,16 +109,13 @@
 
     <title>
         <?php 
-            if (isset($activepage) and in_array($activepage,$keypages))
+            if (in_array($activepage,$keypages))
             {
                 //get header text
                 echo($allpages[$activepage]["head"]["title"]);
             }
             else 
-            {
-                //default header text
                 echo("PhysikOnline: Studentisches eLearning der Physik an der Goethe-Universität, Frankfurt");
-            }
         ?>
     </title>
 
@@ -111,7 +132,7 @@
     <!-- Custom styles for this template -->
     <link href="/css/carousel.css" rel="stylesheet">
 	<link href="/css/physikonline.css" rel="stylesheet">
-  </head>
+</head>
 
 <!-- NAVBAR
 ================================================== -->
@@ -133,20 +154,11 @@
                         <ul class="nav navbar-nav">
                             <?php
                             //build navbar-links
-                            foreach ($mainpages as $name => $link) 
-                            {
-                                //first one just to get the homepage working
-                                if (!isset($activepage) and $name==$keypages[0]) {
-                                    echo ("<li class='active'> <a href='/'> $name </a> </li>");
-                                } 
-                                //set current link as active
-                                else if ($activepage==$name) {
-                                    echo ("<li class='active'> <a href='?page=$name'> $name </a> </li>");
-                                } 
-                                //set up all other links
-                                else {
-                                    echo ("<li> <a href='?page=$name'> $name </a> </li>");
-                                }    
+                            foreach ($mainpages as $key => $arr) {
+                                if ($activepage == $key)
+                                    echo("<li class='active'>". print_link($key, Null, '', True) ."</li>"); // current page
+								else
+                                    echo("<li>". print_link($key, Null, '', True) ."</li>"); //set up all other links 
                             }                        
                             ?>
 
@@ -156,8 +168,8 @@
                                     <li class="dropdown-header">Weitere Projekte</li>
                                     <?php
                                         //build navbar-links
-                                        foreach ($menupages as $name => $link) {
-                                            echo ($activepage==$name ? "<li class='active'> <a href='?page=$name'> $name </a> </li>" : "<li> <a href='?page=$name'> $name </a> </li>");
+                                        foreach ($menupages as $key => $arr) {
+											echo("<li class='".($activepage==$key?'active':'')."'>". print_link($key, Null, '', True) ."</li>");
                                         }                        
                                     ?>
                                     <li class="dropdown-header">Hilfreiche Tools</li>
@@ -165,12 +177,13 @@
                                     <li><a href="https://elearning.physik.uni-frankfurt.de/local/pott-graph/">POTT-Graph</a></li>
                                 </ul>
                             </li>
-                                <?php
-                                    //build navbar-links
-                                    foreach ($aftermenupages as $name => $link) {
-                                        echo ($activepage==$name ? "<li class='active'> <a href='?page=$name'> $name </a> </li>" : "<li> <a href='?page=$name'> $name </a> </li>");
-                                    }                        
-                                ?>
+							
+							<?php
+							//build navbar-links
+							foreach ($aftermenupages as $key => $arr) {
+								echo("<li class='".($activepage==$key?'active':'')."'>". print_link($key, Null, '', True) ."</li>");
+							}                        
+							?>
                         </ul>
                         <ul class="nav navbar-nav pull-right">	
                             <li class="dropdown">
@@ -190,18 +203,17 @@
     
     <!-- include actual site content -->
     <?php
-        if (isset($activepage) and in_array($activepage,$keypages)) {
-            foreach ($allpages as $name => $info) {
-                if ($activepage == $name) {   
-                    require($info["tpl_file"]);
-                }
-            }
-        }
-        else {
-            //defaults to homepage
-            require("pages/index.php");
-        }
-        
+	if (in_array($activepage,$keypages)) {
+		foreach ($allpages as $key => $info) {
+			if ($activepage == $key) {   
+				require($info["tpl_file"]);
+			}
+		}
+	}
+	else {
+		//defaults to homepage
+		require("pages/index.php");
+	}
     ?>
 
     <!-- FOOTER -->

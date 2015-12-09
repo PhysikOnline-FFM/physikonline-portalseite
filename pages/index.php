@@ -27,7 +27,7 @@
             <div class="caption right dark-bg">
 		<div class="content">
 		      <h2>PhysikOnline = ILIAS?</h2>
-		      <p>Wir machen mehr als Lernmanagament: <a href="?page=ILIAS">ILIAS</a> ist nur eine unserer Aufgaben.</p>
+		      <p>Wir machen mehr als Lernmanagament: <?php print_link('ilias'); ?> ist nur eine unserer Aufgaben.</p>
 		</div>
             </div>
         </div>
@@ -36,7 +36,7 @@
             <div class="caption left">
 		<div class="content">
 		      <h1>POKAL</h1>
-		      <p><a href="?page=POKAL">POKAL</a> ist unsere kollaborative Arbeits- und Lernplattform.</p>
+		      <p><?php print_link('pokal'); ?> ist unsere kollaborative Arbeits- und Lernplattform.</p>
 		</div>
            </div>
         </div>
@@ -45,7 +45,7 @@
             <div class="caption right dark-bg">
 		<div class="content">
 		      <h1>Goethe.link</h1>
-		      <p>Goethe war Dichter! Unser <a href="?page=URL Shortener">Link-Kürzer</a> vereinfacht die Lehre.</p>
+		      <p>Goethe war Dichter! Unser <?php print_link('tinygu', 'Link-Kürzer'); ?> vereinfacht die Lehre.</p>
 		</div>
            </div>
         </div>
@@ -54,7 +54,7 @@
             <div class="caption left dark-bg">
 		<div class="content">
 		      <h1>Wir kollaborieren</h1>
-		      <p>Mit <a href="?page=RiedbergTV">RiedbergTV</a> starten wir 2015 ein interdisziplinäres Projekt.</p>
+		      <p>Mit <?php print_link('riedbergtv'); ?> starten wir 2015 ein interdisziplinäres Projekt.</p>
 		</div>
            </div>
         </div>
@@ -104,7 +104,7 @@
     <div class="container marketing">
       <div class="row text-center">
         <div class="col-md-4">
-		<a href="?page=ILIAS" class="metro metro-1">
+		<a href="/pages/ilias" class="metro metro-1">
 			<img class="img-circle" src="//elearning.physik.uni-frankfurt.de/local/logos/ilias-logo.png" alt="" height="140" width="140">
 			<h2>ILIAS</h2>
 			<p>...ist die Software, die hinter dem eLearning-Portal am Fachbereich Physik steckt und aus Köln kommt. Unser Team ist jedoch für den Support, Wartung und Aktualität der von uns betriebenen Instanz verantwortlich.</p>
@@ -112,7 +112,7 @@
         </div>
 		
         <div class="col-md-4">
-		<a href="?page=RiedbergTV" class="metro metro-2">
+		<a href="/pages/riedbergtV" class="metro metro-2">
 			<img class="img-circle" src="/images/logo-riedbergTV-3.png" alt="" height="140" width="140">
 			<h2>RiedbergTV</h2>
 			<p>...ist ein studentisches Videoprojekt mit dem Ziel, die Fachbereiche am Campus Riedberg auf besondere Weise in einem Projekt zusammenarbeiten zu lassen. Willst du mehr erfahren und mit machen?</p>
@@ -120,7 +120,7 @@
         </div>
 		
         <div class="col-md-4">
-		<a href="?page=POKAL" class="metro metro-1">
+		<a href="/pages/pokal" class="metro metro-1">
 			<img class="img-circle" src="/images/logo-pokal-2.png" alt="" height="140" width="140">
 			<h2>POKAL</h2>
 			<p>...ist unsere studentische Initiative ein Computer Algebrasystem am Fachbereich zu etablieren, das wir durch viel Eigenentwicklung um inovative Funktionen zum kollaborativen Arbeiten erweitert haben.</p>
@@ -130,7 +130,7 @@
 	  
       <div class="row text-center">
         <div class="col-md-4">
-		<a href="?page=URL Shortener" class="metro metro-2">
+		<a href="/pages/tinygu" class="metro metro-2">
 			<img class="img-circle" src="/images/goethe.link.png" alt="" height="140" width="140">
 			<h2>URL Shortener</h2>
 			<p>Es gibt viele URL Shortener im Web, aber wir möchten für die Goethe Universität einen anbieten, dem bedingungslos vertraut werden kann und der eine Beziehung zu unserer Uni herstellt!</p>
@@ -144,7 +144,7 @@
         </div>
 		
         <div class="col-md-4">
-		<a href="?page=ILIAS" class="metro metro-2">
+		<a href="/pages/ilias" class="metro metro-2">
 			<img class="img-circle" src="/images/poak-physikplotting.png" alt="" height="140" width="140">
 			<h2>POAK</h2>
 			<p>...ist eine Anwendung, die wir zusätzlich zu POKAL entwickelt haben, um POKAL-Arbeitsblätter für jeden zugänglich zu machen und thematisch suchen zu können.</p>
@@ -154,7 +154,7 @@
 	  
       <div class="row text-center">
         <div class="col-md-4">
-		<a href="?page=Podcast Physik" class="metro metro-1">
+		<a href="/pages/podcastwiki" class="metro metro-1">
 			<img class="img-circle" src="/images/pwp-camera.png" alt="" height="140" width="140">
 			<h2>Podcast Wiki Physik</h2>
 			<p>...war unser erstes student. Videoprojekt, das Experimente vorführte, Professoren und Arbeitsgruppen vorstellte und über weitere Aktivitäten am Fachbereich informierte.</p>
@@ -162,7 +162,7 @@
         </div>
 		
         <div class="col-md-4">
-		<a href="?page=POTT" class="metro metro-2">
+		<a href="/pages/pott" class="metro metro-2">
 			<img src="//elearning.physik.uni-frankfurt.de/projekt/raw-attachment/wiki/POTT/Coffe-Cup.png" alt="" height="140" width="140">
 			<h2>POTT</h2>
 			<p>...ist unser Team-Tracker, der als Organisationsbereich sowohl zum Nachschlagen von Dokumentation, zum Diskutieren als auch zum Notieren von Aufgaben und interessanten Themen dient.</p>

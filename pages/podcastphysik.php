@@ -43,7 +43,7 @@
 	<p>Wir freuen uns, dass PhysikOnline als Mitinitiator in dem studentischen eLearning-Förderfonds 2015 mit RiedbergTV das höchstdotierte Projekt erlangen hat.
 	Wir haben mit diesem Fonds die finanziellen Möglichkeiten bekommen, in vielen Fachbereichen die Ideen der Podcast-Wiki einzubringen.
 
-	<p><a href="riedbergtv.html">Weitere Informationen zu RiedbergTV</a>
+	<p><?php print_link('riedbergtv', 'Weitere Informationen zu RiedbergTV'); ?></p>
 
 	<h2>Weitere Informationen</h2>
 

@@ -3,7 +3,6 @@
 </div>
 
 <div class="container page after-picture">
-
 	<h1>Das PhysikOnline-Team</h1>
 
 	<p>Hier wollen wir das Team von PhysikOnline vorstellen. Die Informationen sollen dabei über
@@ -13,7 +12,6 @@
 	Steckbrief angegeben. Viele Mitarbeiter haben sich auch mit eigenen Projekten verdient gemacht.
 
 	<p>Diese Auflistung ist gerade erst im Entstehen. Sie ist daher etwas unvollständig.
-
 
 	<div class="row" style="margin-top:2em">
 	<div class="col-md-8">

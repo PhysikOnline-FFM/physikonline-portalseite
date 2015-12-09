@@ -9,7 +9,7 @@
 	Modellen unmittelbar mit den Techniken konfrontiert zu werden, die sie später brauchen. Im Gegensatz dazu waren die mittlerweile so verhassten Java-Applets
 	eine technische Machbarkeitsstudie.
 
-	<p>Im Rahmen der Entwicklung von <a href="pokal.html">POKAL</a> ist uns mit der SMC der kleine Bruder der Computeralgebra-Software <em>SAGE</em> aufgefallen.
+	<p>Im Rahmen der Entwicklung von <?php print_link('pokal'); ?> ist uns mit der SMC der kleine Bruder der Computeralgebra-Software <em>SAGE</em> aufgefallen.
 	SMC dient dazu, nicht ein gesamtes Sage-Notebook im Web darzustellen, sondern nur eine einzelne Berechnungszelle. Wir decken mit unseren POKAL-Rechenknoten den
 	europaweiten Bedarf aller SageMathCell-Rechnungen als Einbindung in ein globales Lastverteilungssystem ab.
 </div>
