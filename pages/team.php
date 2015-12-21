@@ -99,6 +99,24 @@
 				<img class="media-object " src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Man_Silhouette2.jpg/160px-Man_Silhouette2.jpg">
 			</div>
 			<div class="media-body">
+				<h4 class="media-heading">Hassan Hatoum</h4>
+				<dl class="dl-horizontal">
+					<dt>Dabei seit <dd>Dezember 2015
+					<dt>Fähigkeiten <dd>Videoton und Musik, Front-End-Development
+					<dt>Lieblingsprogrammiersprachen <dd> Angular, Javascript
+					<dt>Linux oder Windows? <dd>Linux
+					<dt>Projekt <dd>RiedbergTV, Illias
+				</dl>
+
+				<p>Seit dem Wintersemester 2015/16 ist Hassan dem Team zugestoßen und arbeitet für RiedbergTv im Bereich Videodreh und Musik/Ton.
+				Unter anderem unterstützt er das Physikonline-Team bei der Front-End Entwccklungen der Websites.
+			</div>
+		</li>
+		<li class="media">
+			<div class="media-left">
+				<img class="media-object " src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Man_Silhouette2.jpg/160px-Man_Silhouette2.jpg">
+			</div>
+			<div class="media-body">
 				<h4 class="media-heading">Steffen Henschel</h4>
 				<dl class="dl-horizontal">
 					<dt>Zeitraum<dd>2013-2014
@@ -314,9 +332,9 @@
 	</ul>
 
 	</div><!-- main col -->
-	<div class="col-md-4">
+	<!--<div class="col-md-4">
 		<div data-spy="affix" data-offset-top="20" data-offset-bottom="60"><!-- pseudo-static -->
-			<h3>Filter</h3>
+			<!--<h3>Filter</h3>
 			<p>Hier kommt ein Filter hin um sich anzuzeigen:</p>
 			<ul>
 				<li>Nur aktive
@@ -327,6 +345,6 @@
 			</ul>
 			<p>Vorbild: <a href="https://th.physik.uni-frankfurt.de/~koeppel/talks/">Variabler Und/Oder-Filter</a> den Sven mal schrieb.
 		</div>
-	</div>
+	</div>-->
 	</div><!-- row -->
 </div>

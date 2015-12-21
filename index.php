@@ -120,7 +120,7 @@ function print_link($key, $text=Null, $css_class="", $return_str=False){
     </title>
 
     <!-- styles -->
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
 	<link href="//pokal.uni-frankfurt.de/data/bootstrap-3.2.0/css/bootstrap-theme.pokal2.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
