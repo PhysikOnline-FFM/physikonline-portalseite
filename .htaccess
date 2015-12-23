@@ -13,15 +13,15 @@ RewriteRule ^foobar/([^\.]+)(\.html)?$  /index.php?page=$1
 # fehlerdokumente vom ILIAS
 #ErrorDocument 401  /local/error/401.htm
 #ErrorDocument 403  /local/error/403.htm
-#ErrorDocument 404  /local/error/404.htm
+ErrorDocument 404  /local/error/404.htm
 #ErrorDocument 410  /local/error/410.htm
 
 # gerade in Zusammenhang Fehlerdokumente gibts immer noch falschgeleitete
 # Links, die vom Central Server nicht abgehalten werden...
 # 1. Fehler uns so ohne Redirection
-#RewriteRule ^~elearning-www/elearning/local/error/(.*)$  /local/error/$1 [L]
+RewriteRule ^~elearning-www/physikonline/local/error/(.*)$  /local/error/$1 [L]
 # 2. Alles andere mit Redirection
-#RewriteRule ^~elearning-www/elearning/(.*)$  /$1  [R,L]
+RewriteRule ^~elearning-www/physikonline/(.*)$  /$1  [R,L]
 
 # SVN und Git-Verzeichnisse verbieten (wichtig!)
 # sowie: Zugriff auf Backup-Files verbieten (Dateinamen wie bearbeitet.php~)
