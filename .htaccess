@@ -1,0 +1,31 @@
+# .htaccess for ITP Webserver, greift an
+#    http://physikonline.uni-frankfurt.de/
+RewriteEngine on
+# das klappt nicht:
+RewriteRule ^pages/([^\.]+)(\.html)?$  /index.php?page=$1
+# das klappt schon:
+RewriteRule ^foobar/([^\.]+)(\.html)?$  /index.php?page=$1
+
+# ErrorDocuments
+#HeaderName /local/error/index-header.htm
+#IndexOptions FancyIndexing VersionSort HTMLTable SuppressHTMLPreamble NameWidth=* DescriptionWidth=*
+
+# fehlerdokumente vom ILIAS
+#ErrorDocument 401  /local/error/401.htm
+#ErrorDocument 403  /local/error/403.htm
+#ErrorDocument 404  /local/error/404.htm
+#ErrorDocument 410  /local/error/410.htm
+
+# gerade in Zusammenhang Fehlerdokumente gibts immer noch falschgeleitete
+# Links, die vom Central Server nicht abgehalten werden...
+# 1. Fehler uns so ohne Redirection
+#RewriteRule ^~elearning-www/elearning/local/error/(.*)$  /local/error/$1 [L]
+# 2. Alles andere mit Redirection
+#RewriteRule ^~elearning-www/elearning/(.*)$  /$1  [R,L]
+
+# SVN und Git-Verzeichnisse verbieten (wichtig!)
+# sowie: Zugriff auf Backup-Files verbieten (Dateinamen wie bearbeitet.php~)
+# solche werden von vim oder gedit angelegt.
+RewriteRule \.(svn/|git/|bak|old|tmp|swp?)|~$  - [F,L]
+
+# eof.
